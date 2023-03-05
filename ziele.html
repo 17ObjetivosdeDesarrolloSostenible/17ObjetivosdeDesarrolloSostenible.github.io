@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        body {
+            background-image: url(Background.png);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #container {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        img {
+            height: 40%;
+            transition: all 0.3s ease 0s;
+        }
+
+        img:hover {
+            cursor: pointer;
+            filter: brightness(0.8);
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-weight: 900;
+        }
+        #btntext {
+    font-weight: 700;
+    font-size: 22.5px;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 150, 255, 1);
+    color: white;
+    height: 50px;
+    width: 300px;
+    font-size: 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 150, 255, 0.7);
+}
+
+
+    </style>
+
+</head>
+<body>
+    <h1>¡Seleccione un botón!</h1>
+    <div id="container">
+        <img src="ARMUT1.PNG" onclick="window.location.href = 'ziel1.html';">
+        <img src="Hugernot2.PNG" onclick="window.location.href = 'ziel2.html';">
+        <img src="Bildung4.PNG" onclick="window.location.href = 'ziel3.html';">
+        <img src="ElBIP8.PNG" onclick="window.location.href = 'ziel4.html';">
+    </div>
+    <button type="button" onclick="window.location.href = 'index.html';">Devolver</button>
+</body>
+</html>
